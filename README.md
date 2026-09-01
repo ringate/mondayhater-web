@@ -1,0 +1,1 @@
+# mondayhater.net Static Website

@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #777;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #222;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.apps {
+    margin-bottom: 80px;
+}
+
+.app-card {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.app-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.app-content {
+    flex: 1;
+}
+
+.app-content h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.app-content > p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.app-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.app-content ul li {
+    padding: 5px 0;
+    color: #666;
+}
+
+.app-meta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.status, .platform {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status.released {
+    background: #4caf50;
+    color: white;
+}
+
+.status.testing {
+    background: #ff9800;
+    color: white;
+}
+
+.status.development {
+    background: #2196f3;
+    color: white;
+}
+
+.platform {
+    background: #e0e0e0;
+    color: #555;
+}
+
+.app-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.app-link:hover {
+    background: #444;
+}
+
+.why p, .about p, .contact p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.contact a {
+    color: #2196f3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 2px solid #e0e0e0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 40px 15px 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .app-card {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .app-icon {
+        width: 100px;
+        height: 100px;
+        align-self: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
